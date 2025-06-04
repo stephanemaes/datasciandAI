@@ -16,7 +16,7 @@ from sklearn.linear_model import LinearRegression
 import altair as alt                                # Alternative visualisation system
 ```
 
-# [H1 - Samples](./Pythat0n/H1.md)
+# [H1 - Samples](./H1.md)
 
 ```py
 # Data inlezen (kijken welke sep dat het is, meestal ; of ,) -> default is ,
@@ -129,7 +129,7 @@ data["nieuwecol"] = data["kolomnaam"].map(functie)
 ```
 ---
 
-# [H2 - Analyse van 1 variabele](./Pythat0n/H2.md)
+# [H2 - Analyse van 1 variabele](./H2.md)
 
 ## Kwalitatieve variabelen
 
@@ -207,7 +207,7 @@ print(f"Standard deviation sample    : {np.std(a, ddof=1)}")
 
 ---
 
-# [H3](./Pythat0n/H3.md)
+# [H3](./H3.md)
 
 **Student $t$-distribution in Python**  
 Import scipy.stats  
@@ -256,12 +256,21 @@ indien 1 van deze niet voldaan is gebruik je de t-test en deze normaal verdeeld 
 
 ## ![Alt text](type-i-and-type-ii-error.png)
 
-# [H4 -> 2 kwalitatieve variabelen](./Pythat0n/H4.md)
 
-H0 -> er is **geen** verband tussen de 2 variabelen
-H1 -> er is **een** verband tussen de 2 variabelen
+| **Independent**                     | **Dependent**                                           |**Test/Metric**                  |**Chapter**    |
+| ----------------------------------- | ------------------------------------------------------- |------------------------------   |----------------|
+| Qualitative                         | Qualitative                                             | 𝜒2-testCramér’s𝑉                |[H4](./H4.md)  |
+| Qualitative                         | Quantitative                                            |two-sample𝑡-testCohen’s𝑑          |[H5](./H5.md)  |
+| Quantitative                        | Quantitative                                            | — Regression, correlation        |[H6](./H6.md) |
 
-De Chi-kwadraattoets wordt gebruikt om associaties tussen categorische variabelen te beoordelen
+
+
+# [H4 -> 2 kwalitatieve variabelen](./H4.md) 
+
+H0 -> er is **geen** verband tussen de 2 variabelen 
+H1 -> er is **een** verband tussen de 2 variabelen     
+
+De Chi-kwadraattoets wordt gebruikt om associaties tussen categorische variabelen te beoordelen 
 
 Cramér's V meet de sterkte van deze associatie
 
@@ -269,7 +278,7 @@ en de goodness-of-fit test controleert of de waargenomen frequenties overeenkome
 
 ---
 
-# [H5 -> 1 kalitatieve variabele en 1 kwantitatieve variabelen](./Pythat0n/H5.md)
+# [H5 -> 1 kalitatieve variabele en 1 kwantitatieve variabelen](./H5.md)
 
 Use the t-test for independence when comparing the means of two independent groups or conditions.
 
@@ -290,7 +299,7 @@ Use Cohen's d as a measure of effect size to interpret the practical significanc
 
 ---
 
-# [H6 -> 2 kwantitatieve variabelen](./Pythat0n/H6.md)
+# [H6 -> 2 kwantitatieve variabelen](./H6.md)
 
 dependend variable -> y
 independend variable -> x
@@ -312,7 +321,7 @@ Use the coefficient of determination (R-squared) to assess the model fit, compar
 
 ---
 
-# [H7 -> time series](./Pythat0n/H7.md)
+# [H7 -> time series](./H7.md)
 
 - moving averages
   - simple moving average
